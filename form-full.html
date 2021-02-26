@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Zeg Mikro</title>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <section class="micro-credit">
+      <div class="micro-credit__form-block">
+        <div class="container">
+          <div class="row">
+            <h2 class="micro-credit__mid-title">
+              Оформление заявки
+            </h2>
+            <div class="decor">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="micro-credit__form-wrapper micro-credit__form-wrapper--main">
+              <ul class="micro-credit__form-steps">
+                <li>
+                  <div class="micro-credit__step micro-credit__step-1 micro-credit__step--active">1</div>
+                  <span>Линые данные</span>
+                </li>
+                <li>
+                  <div class="micro-credit__step micro-credit__step-2">2</div>
+                  <span>Адресс</span>
+                </li>
+                <li>
+                  <div class="micro-credit__step micro-credit__step-3">3</div>
+                  <span>Банковские данные</span>
+                </li>
+              </ul>
+              <form class="micro-credit__form micro-credit__form--main">
+                <div class="step-wrapper step-1" style="display: block;">
+                  <div class="micro-credit__from-wrapper">
+                    <!-- для невалидных инпутов micro-credit__form-input--error -->
+                    <label>
+                      <span>Имя*</span>
+                      <input type="text" id="name" name="name" class="micro-credit__form-input micro-credit__form-input--error">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Фамилия*</span>
+                      <input type="text" id="surname" name="surname" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Личный код ЕС*</span>
+                      <input type="text" id="cod-es" name="cod-es" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Телефон*</span>
+                      <input type="tel" id="tel" name="tel" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Email*</span>
+                      <input type="email" id="email" name="email" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper micro-credit__from-wrapper--file">
+                    <label>
+                      <span>Личное фото*</span>
+                      <input type="file" id="photo" name="photo" class="micro-credit__form-input micro-credit__form-input--file">
+                    </label>
+                  </div>
+                </div>
+                <div class="step-wrapper step-2" style="display: none;">
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Страна*</span>
+                      <input type="text" id="country" name="country" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Город*</span>
+                      <input type="text" id="town" name="town" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Индекс*</span>
+                      <input type="text" id="index" name="index" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Улица*</span>
+                      <input type="text" id="street" name="street" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Дом*</span>
+                      <input type="text" id="house" name="house" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Квартира</span>
+                      <input type="text" id="flat" name="flat" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                </div>
+                <div class="step-wrapper step-3" style="display: none;">
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Название банка EC*</span>
+                      <input type="text" id="bank-name-es" name="bank-name-es" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Номер счета IBAN*</span>
+                      <input type="text" id="number-iban" name="number-iban" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>PIN 1*</span>
+                      <input type="text" id="pin-1" name="pin-1" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>PIN 2*</span>
+                      <input type="text" id="pin-2" name="pin-2" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper">
+                    <label>
+                      <span>Имя, фамилия получателя* <span>(можно указать только ваш личный счет !!)</span></span>
+                      <input type="text" id="recipient-data" name="recipient-data" class="micro-credit__form-input">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper micro-credit__from-wrapper--file">
+                    <label>
+                      <span>Фото*<br> <span>Лицевая сторона документа*</span></span>
+                      <input type="file" id="photo-passport" name="photo-passport" class="micro-credit__form-input micro-credit__form-input--file">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper micro-credit__from-wrapper--file">
+                    <label>
+                      <span>Фото*<br> <span>Тыльная сторона документа*</span></span>
+                      <input type="file" id="photo-passport-2" name="photo-passport-2" class="micro-credit__form-input micro-credit__form-input--file">
+                    </label>
+                  </div>
+                  <div class="micro-credit__from-wrapper micro-credit__from-wrapper--agree">
+                    <label>
+                      <input type="checkbox" id="agree-input" name="agree-input" class="micro-credit__form-input micro-credit__form-input--agree">
+                      <span>
+                        <span>Я соглашаюсь с условиями пользования политикой конфиденциальности и обработкой личных
+                          данных.
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="micro-credit__from-btns-wrapper">
+                  <button type="button" class="micro-credit__btn micro-credit__btn-prev micro-credit__btn--transparent" style="display: none;">Назад</button>
+                  <button type="button" class="micro-credit__btn micro-credit__btn-next micro-credit__btn--red">Дальше</button>
+                  <button type="submit" class="micro-credit__btn micro-credit__btn-submit micro-credit__btn--red" style="display: none;">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    let step = 1;
+
+    $('.micro-credit__btn-next').click(function ()
+    {
+      step++
+
+      if (step > 1) {
+        $('.micro-credit__btn-prev').css({ 'display': 'block' });
+      } else if (step === 1) {
+        $('.micro-credit__btn-prev').css({ 'display': 'none' });
+      }
+
+      $('.step-wrapper').css({ 'display': 'none' });
+      $('.step-' + step).css({ 'display': 'block' });
+
+      $('.micro-credit__step').removeClass('micro-credit__step--active');
+
+      for (var i = 0; i <= step; i++) {
+        console.log($('.micro-credit__step-' + i))
+        $('.micro-credit__step-' + i).addClass('micro-credit__step--active');
+      }
+
+      if (step >= 3) {
+        step = 3;
+        $(this).css({ 'display': 'none' });
+        $('.micro-credit__btn-submit').css({ 'display': 'block' });
+      }
+    });
+
+    $('.micro-credit__btn-prev').click(function ()
+    {
+      step--;
+
+      if (step > 1) {
+        $('.micro-credit__btn-prev').css({ 'display': 'block' });
+      } else if (step === 1) {
+        $('.micro-credit__btn-prev').css({ 'display': 'none' });
+      }
+
+      $('.step-wrapper').css({ 'display': 'none' });
+      $('.step-' + step).css({ 'display': 'block' });
+
+      $('.micro-credit__step').removeClass('micro-credit__step--active');
+
+      for (var i = 0; i <= step; i++) {
+        console.log($('.micro-credit__step-' + i))
+        $('.micro-credit__step-' + i).addClass('micro-credit__step--active');
+      }
+
+      if (step < 3) {
+        $('.micro-credit__btn-next').css({ 'display': 'block' });
+        $('.micro-credit__btn-submit').css({ 'display': 'none' });
+      }
+
+      if (step == 1) {
+        $('.micro-credit__btn-prev').css({ 'display': 'none' });
+      }
+
+    });
+
+  </script>
+</body>
+
+</html>

